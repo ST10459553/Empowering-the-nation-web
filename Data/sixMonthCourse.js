@@ -42,7 +42,7 @@ export const sixMonthCourse = [
         id: 4,
         name: 'Life SKills',
         description: 'To provide skills to navigate basic life necessities',
-        image: '../Assets/images/sewing.jpg',
+        image: '../Assets/images/lifeskill.jpg',
         perk:`
 • Opening a bank account
 • Basic labour law (know your rights)
