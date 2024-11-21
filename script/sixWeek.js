@@ -22,7 +22,7 @@ gridContainer.addEventListener('click',(e)=>{
         // Store the selected venue with its index in the bookingArray
         description.push({ index: index, ...selectedCourse });
         localStorage.setItem('selectedCourse', JSON.stringify(description));  // 
-        window.location.href='../HTML/First Aid.html'
+        window.location.href='../HTML/description.html'
     }
 })
 console.log(sixMonthCourse)

@@ -6,7 +6,7 @@ let html = '';
 
 description.forEach((item, index) => {
     html = `
-    <div class="detailContainer" data-index="${index}">
+    <div class="detailContainer-js" data-index="${index}">
           <h1>${item.name || "First Aid"}</h1>
           <p>
             Fees: ${item.price}<br>
@@ -16,7 +16,7 @@ description.forEach((item, index) => {
           <ul>
               <li>${item.perk}</li>
           </ul>
-          <button class="add-to-course" data-index="${index}">Add to Courses</button>
+          <button class="add-to-course-js" data-index="${index}">Add to Courses</button>
     </div>
     <div class="imgContainer">
         <img src="${item.image}" alt="${item.name || "First Aid"}" srcset="">  
@@ -26,7 +26,7 @@ description.forEach((item, index) => {
 flexContainer.innerHTML = html;
 
 flexContainer.addEventListener('click', (e) => {
-    if (e.target.classList.contains('add-to-course')) {
+    if (e.target.classList.contains('add-to-course-js')) {
         const index = e.target.getAttribute('data-index'); 
         const selectedCourse = description[index];
         const itemExist=cart.some((item)=>

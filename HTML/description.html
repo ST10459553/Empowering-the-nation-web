@@ -5,10 +5,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-        <title>Garden Maintenance</title>
+        <title>First Aid</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Css/Garden Maintenance.css">
+        <link rel="stylesheet" type="text/css" href="Css/First Aid.css">
         <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -83,8 +83,32 @@ width: 100%;
   text-align: center;
   color: white;
 }
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10rem;
+  gap: 10rem;
+}
+.flex-container img{
+  height: 25rem;
+}
+.add-to-course-js{
+  padding: 12px;
+  background-color: #910B0B;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  align-self: center;
+  
+}
+.detailContainer-js{
+  display: flex;
+  flex-direction: column;
+  
+}
 </style>
-    </head>
     <body>
          <div class="navbar">
   <a href="index.html">Home</a>
@@ -106,28 +130,16 @@ width: 100%;
     </div>
   </div>
 </div>
-        <h1>
-           Garden Maintenance
-        </h1>
+      
        
         <br>
-        
-        <p>
-            Fees: R750<br>
-            Purpose:  To provide basic knowledge of watering, pruning and planting in a domestic garden.<br>
-            Content:</p> <br>
-            <ul>
-            <li>Water restrictions and the watering requirements of indigenous and exotic plants</li>
-            <li>Pruning and propagation of plants</li>  
-            <li>Planting techniques for different plant types</li>
-            
-        </ul>
-    
-        
-       
-              <footer>
+        <main class="flex-container">
+          
+            </main>
+        <footer>
              Skills for growth
         </footer>
         
     </body>
+    <script type="module" src="../script/desc.js"></script>
 </html>

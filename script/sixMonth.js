@@ -10,7 +10,7 @@ sixMonthCourse.forEach((item,index)=>{
             <img src="${item.image}" alt="${item.name}" srcset="">
             <button class="enquireBtn" data-index="${index}">${item.name}</button>
             <p class="description">${item.description}</p>
-            <p>${item.price}</p>
+            <p>R${item.price}</p>
         </div>`;
 })
 
@@ -22,7 +22,7 @@ gridContainer.addEventListener('click',(e)=>{
         // Store the selected venue with its index in the bookingArray
         description.push({ index: index, ...selectedCourse });
         localStorage.setItem('selectedCourse', JSON.stringify(description));  // 
-        window.location.href='../HTML/First Aid.html'
+        window.location.href='../HTML/description.html'
     }
 })
 console.log(sixMonthCourse)

@@ -7,7 +7,7 @@ let buttonContainer=document.querySelector('.button-container')
 const total = (array) => {
     let total = 0
     array.forEach((item) => {
-        total += parseInt(item.price)
+        total += parseInt(item.price)*1.15
         parseInt(total)
     })
     return total
@@ -31,7 +31,9 @@ cart.forEach((item, index) => {
 
 
 cartContainer.innerHTML += html
-cartContainer.innerHTML+=`<div class="btn-container-js"><button class="reset-btn-js">Reset</button></div>`
+cartContainer.innerHTML+=`<div class="btn-container-js"><button class="reset-btn-js">Reset</button>
+<p class="total-js"> Total R${totalNumber.toFixed(1)} (15 % VAT Included)</p>
+</div>`
 
 cartContainer.addEventListener('click',(e)=>{
     if(
